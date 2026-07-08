@@ -754,9 +754,9 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
   }
 
   .logo {
-    height: 42px;
-    min-width: 178px;
-    margin-left: -4px;
+    height: 40px;
+    min-width: 180px;
+    margin-left: -70px;
     overflow: visible;
     flex-shrink: 0;
   }
@@ -765,7 +765,7 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
     height: 42px;
     width: auto;
     display: block;
-    transform: translateY(4px) scale(4.15);
+    transform: translateY(2px) scale(6.0);
     transform-origin: left center;
   }
 
