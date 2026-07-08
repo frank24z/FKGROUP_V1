@@ -744,9 +744,9 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
 
 @media (max-width: 640px) {
   nav {
-    padding: 0.7rem 1rem 0.7rem 0.75rem;
-    min-height: 72px;
-    gap: 10px;
+    padding: 0.7rem 0.85rem 0.7rem 0.6rem;
+    min-height: 76px;
+    gap: 8px;
   }
 
   .nav-links {
@@ -755,22 +755,26 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
 
   .logo {
     height: 42px;
-    min-width: 135px;
-    margin-left: 0;
+    min-width: 178px;
+    margin-left: -4px;
     overflow: visible;
+    flex-shrink: 0;
   }
 
   .logo-img {
     height: 42px;
-    transform: translateY(3px) scale(3.2);
+    width: auto;
+    display: block;
+    transform: translateY(4px) scale(4.15);
     transform-origin: left center;
   }
 
   .nav-cta {
-    padding: 10px 16px;
+    padding: 10px 14px;
     font-size: 13px;
     white-space: nowrap;
     border-radius: 12px;
+    flex-shrink: 0;
   }
 
   .hero {
