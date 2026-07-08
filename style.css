@@ -38,15 +38,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.85rem 2.5rem;
+  padding: 0.65rem 2.5rem 0.65rem 0.35rem;
+  min-height: 64px;
+  overflow: visible;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
   text-decoration: none;
+  height: 42px;
+  overflow: visible;
+  margin-left: -38px;
+  min-width: 245px;
 }
+
 
 .logo-mark {
   width: 40px;
@@ -57,6 +63,14 @@ nav {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.logo-img {
+  height: 42px;
+  width: auto;
+  display: block;
+  transform: translateY(4px) scale(6.0);
+  transform-origin: left center;
 }
 
 .logo-mark span {
@@ -729,9 +743,10 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
 }
 
 @media (max-width: 640px) {
-  nav { padding: 0.85rem 1.25rem; }
+  nav { padding: 0.75rem 1.25rem; min-height: 60px; }
   .nav-links { display: none; }
   .nav-cta { padding: 9px 14px; }
+  .logo-img { height: 38px; transform: scale(1.55); }
   .hero { padding: 4rem 1.25rem 3.5rem; }
   section { padding: 3.5rem 1.25rem; }
   .stats-bar { grid-template-columns: repeat(3, 1fr); }
@@ -785,4 +800,49 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
     max-width: 320px;
     justify-content: center;
   }
+}
+
+
+
+/* PRODUCTOS FK HOME */
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, #ffffff 0%, #f2f2ef 100%);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 18px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.04);
+}
+
+.product-image.is-empty::before {
+  content: attr(data-label);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 1rem;
 }

@@ -3,28 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FK Home — Catálogo y Agendamiento</title>
+  <title>FK Home</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <!-- <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" /> -->
 </head>
 <body>
 
   <nav>
     <a href="index.html" class="logo">
-      <div class="logo-mark"><span>FK</span></div>
-      <div class="logo-info">
-        <div class="logo-name">FK Group</div>
-        <div class="logo-tagline">Volver al inicio</div>
-      </div>
+      <img src="img/logo.png" alt="FK Group" class="logo-img">
     </a>
-    <a href="#calendario" class="nav-cta">Agendar Visita</a>
+    <a href="https://wa.me/56967044419?text=Hola%20FK%20Group%2C%20quiero%20agendar%20una%20visita%20t%C3%A9cnica%20Handyman" class="nav-cta" target="_blank" rel="noopener">Agendar por WhatsApp</a>
   </nav>
 
-  <div style="background: #FAEEDA; padding: 4rem 2.5rem; text-align: center; border-bottom: 0.5px solid var(--border);">
+<div style="background: #FAEEDA; padding: 2.5rem 2.5rem; text-align: center; border-bottom: 0.5px solid var(--border);">
     <h1 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 1rem; color: var(--text-primary);">Ecosistema FK Home</h1>
     <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Pide productos para que nuestro técnico los lleve a tu visita. Pruébalos en tu casa y decide si comprarlos en el momento.</p>
   </div>
@@ -34,35 +30,50 @@
     <h2 class="section-title">Llevamos la tecnología a tu living</h2>
     <div class="services-grid" style="margin-top: 2rem;">
       
-      <div class="svc-card">
+      <div class="svc-card product-card">
+        <div class="product-image" data-label="Apple AirTag">
+          <img src="img/productos/airtag.jpg" alt="Apple AirTag" onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');" />
+        </div>
         <h3 class="svc-title">Apple AirTag</h3>
         <div class="svc-price">$35.000</div>
         <p class="svc-desc">Rastreador de alta precisión. El técnico lo lleva y te ayuda a configurarlo si decides quedártelo.</p>
         <a href="https://wa.me/56967044419?text=Hola%2C%20quiero%20que%20el%20t%C3%A9cnico%20traiga%20un%20AirTag%20a%20mi%20visita" target="_blank" class="btn-primary" style="display:block; text-align:center; margin-top:15px; font-size:12px;">Pedir para mi visita</a>
       </div>
 
-      <div class="svc-card">
+      <div class="svc-card product-card">
+        <div class="product-image" data-label="Localizador Ugreen">
+          <img src="img/productos/ugreen-tag.jpg" alt="Localizador Ugreen" onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');" />
+        </div>
         <h3 class="svc-title">Localizador Ugreen</h3>
         <div class="svc-price">$22.000</div>
         <p class="svc-desc">Alternativa certificada por Apple "Find My". Ideal para flotas o llaveros de la casa.</p>
         <a href="https://wa.me/56967044419?text=Hola%2C%20quiero%20que%20el%20t%C3%A9cnico%20traiga%20un%20Ugreen%20Tag%20a%20mi%20visita" target="_blank" class="btn-primary" style="display:block; text-align:center; margin-top:15px; font-size:12px;">Pedir para mi visita</a>
       </div>
 
-      <div class="svc-card">
+      <div class="svc-card product-card">
+        <div class="product-image" data-label="Google Nest Mini">
+          <img src="img/productos/nest-mini.jpg" alt="Google Nest Mini" onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');" />
+        </div>
         <h3 class="svc-title">Google Nest Mini</h3>
         <div class="svc-price">$45.000</div>
         <p class="svc-desc">Parlante inteligente. Lo probamos en tu red Wi-Fi para que veas cómo controla tus luces.</p>
         <a href="https://wa.me/56967044419?text=Hola%2C%20quiero%20que%20el%20t%C3%A9cnico%20traiga%20un%20Google%20Nest%20Mini" target="_blank" class="btn-primary" style="display:block; text-align:center; margin-top:15px; font-size:12px;">Pedir para mi visita</a>
       </div>
 
-      <div class="svc-card">
+      <div class="svc-card product-card">
+        <div class="product-image" data-label="Ampolleta Smart RGB">
+          <img src="img/productos/ampolleta-smart.jpg" alt="Ampolleta Smart RGB" onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');" />
+        </div>
         <h3 class="svc-title">Ampolleta Smart RGB</h3>
         <div class="svc-price">$12.000 c/u</div>
         <p class="svc-desc">Crea ambientes con millones de colores. Las instalamos en tus lámparas para que veas el cambio.</p>
         <a href="https://wa.me/56967044419?text=Hola%2C%20quiero%20que%20el%20t%C3%A9cnico%20traiga%20ampolletas%20Smart" target="_blank" class="btn-primary" style="display:block; text-align:center; margin-top:15px; font-size:12px;">Pedir para mi visita</a>
       </div>
       
-      <div class="svc-card">
+      <div class="svc-card product-card">
+        <div class="product-image" data-label="Interruptor Smart">
+          <img src="img/productos/interruptor-smart.jpg" alt="Interruptor Smart" onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');" />
+        </div>
         <h3 class="svc-title">Interruptor Smart</h3>
         <div class="svc-price">$18.500</div>
         <p class="svc-desc">El técnico evalúa tu cableado primero. Si es factible instalarlo, lo compras en el momento.</p>
@@ -72,13 +83,13 @@
     </div>
   </section>
 
+<!--
   <div class="services-bg" id="calendario">
     <section style="text-align: center;">
       <div class="section-eyebrow">Reserva de tiempo</div>
       <h2 class="section-title">Agenda tu visita técnica</h2>
       <p class="section-sub">Selecciona el día y hora que más te acomode para recibir a nuestro equipo de Handyman.</p>
       
-      <!-- Calendario Calendly: reemplaza la URL por tu enlace real de Calendly -->
       <div style="background: white; border-radius: var(--radius-lg); border: 0.5px solid var(--border); margin-top: 2rem; padding: 1rem; overflow: hidden;">
         <div
           class="calendly-inline-widget"
@@ -87,7 +98,7 @@
         </div>
 
         <p style="font-size: 13px; color: var(--text-muted); margin-top: 1rem;">
-          Si el calendario no carga, agenda directo por WhatsApp.
+          Si no quieres autoagendar, agenda directo por WhatsApp.
         </p>
         <a
           href="https://wa.me/56967044419?text=Hola%20FK%20Group%2C%20quiero%20agendar%20una%20visita%20t%C3%A9cnica%20Handyman"
@@ -100,14 +111,15 @@
       </div>
     </section>
   </div>
+-->
 
   <footer>
-    <div class="copy">© 2026 FK Group — Franco Alarcón. Todos los derechos reservados.</div>
-    <div class="tag">Ingeniería para todo</div>
+    <div class="copy">© 2026 FK Group. Todos los derechos reservados.</div>
+    <div class="tag">Future Knowledge · Field Knowledge · Fix & Know</div>
   </footer>
 
   <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <!-- <script src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
 
 </body>
 </html>
