@@ -109,41 +109,184 @@
   </section>
 
   <div class="services-bg" id="servicios">
-    <section style="max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem;">
-      <div class="section-eyebrow">Servicios activos</div>
-      <h2 class="section-title">Lo que resolvemos hoy</h2>
-      <p class="section-sub">Precios referenciales en CLP. Cada proyecto se cotiza según alcance, urgencia y complejidad técnica.</p>
-      <div class="services-grid">
-        <div class="svc-card">
-          <div class="svc-title">Red Mesh empresarial</div>
-          <div class="svc-price">Desde $180.000</div>
-          <div class="svc-desc">Diseño e instalación de redes de alta velocidad para oficinas, locales y hogares de alto consumo.</div>
+    <section class="showcase-section">
+      <div class="showcase-heading">
+        <div>
+          <div class="section-eyebrow">Servicios activos</div>
+          <h2 class="section-title">Proyectos, capacidades y ofertas FK</h2>
+          <p class="section-sub">Explora soluciones reales y modulares. Cada tarjeta identifica la división responsable, el tipo de trabajo y el resultado que podemos construir contigo.</p>
         </div>
-        <div class="svc-card">
-          <div class="svc-title">Soporte IT mensual</div>
-          <div class="svc-price">Desde $120.000 / mes</div>
-          <div class="svc-desc">Contrato recurrente para soporte técnico, continuidad operativa, usuarios, equipos y conectividad.</div>
+        <a href="#contacto" class="showcase-cta">Conversemos sobre tu proyecto →</a>
+      </div>
+
+      <div class="project-filters" role="group" aria-label="Filtrar proyectos por división">
+        <button class="project-filter is-active" type="button" data-project-filter="all" aria-pressed="true">Todos</button>
+        <button class="project-filter" type="button" data-project-filter="telecom">Telefonía</button>
+        <button class="project-filter" type="button" data-project-filter="redes">Redes</button>
+        <button class="project-filter" type="button" data-project-filter="cctv">CCTV</button>
+        <button class="project-filter" type="button" data-project-filter="software">Software e IA</button>
+        <button class="project-filter" type="button" data-project-filter="it">TI</button>
+        <button class="project-filter" type="button" data-project-filter="home">Home & Handyman</button>
+      </div>
+
+      <div class="project-carousel-shell">
+        <button class="project-arrow project-arrow-left" type="button" aria-label="Proyecto anterior" data-project-direction="-1">‹</button>
+
+        <div class="project-carousel" id="project-carousel" tabindex="0" aria-label="Carrusel de proyectos y servicios FK Group">
+          <article class="project-card" data-project-category="telecom">
+            <div class="project-media project-media-telecom" data-fallback="☎">
+              <img src="img/proyectos/telefonia-500.jpg" alt="Instalación y configuración masiva de teléfonos IP" loading="lazy" onerror="this.hidden=true; this.parentElement.classList.add('is-empty');" />
+              <span class="project-type project-type-case">Caso de experiencia</span>
+              <div class="project-metric"><strong>500</strong><span>teléfonos IP</span></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-module">FK Tech & Systems · Telefonía</div>
+              <h3>Despliegue masivo de voz sobre IP</h3>
+              <p>Planificación, aprovisionamiento, instalación, pruebas y puesta en marcha de extensiones IP con migración ordenada y continuidad operacional.</p>
+              <div class="project-tags">
+                <span>VoIP</span><span>PBX</span><span>Telefonía IP</span>
+              </div>
+              <div class="project-results">
+                <span>✓ Implementación por etapas</span>
+                <span>✓ Pruebas y documentación</span>
+              </div>
+              <a class="project-link" href="https://wa.me/56967044419?text=Hola%20FK%20Group%2C%20quiero%20evaluar%20un%20proyecto%20de%20telefon%C3%ADa%20IP" target="_blank" rel="noopener">Evaluar proyecto →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-project-category="telecom">
+            <div class="project-media project-media-pbx" data-fallback="⇄">
+              <img src="img/proyectos/migracion-pbx.jpg" alt="Modernización e integración de plataformas PBX multimarca" loading="lazy" onerror="this.hidden=true; this.parentElement.classList.add('is-empty');" />
+              <span class="project-type project-type-solution">Solución modular</span>
+              <div class="project-metric"><strong>E1→SIP</strong><span>migración controlada</span></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-module">FK Tech & Systems · Comunicaciones</div>
+              <h3>Modernización PBX multimarca</h3>
+              <p>Integración de Avaya, Alcatel, Nortel, Asterisk e Issabel mediante SIP trunk, SBC, gateways y conversores para conservar inversión y avanzar por etapas.</p>
+              <div class="project-tags">
+                <span>SIP Trunk</span><span>SBC</span><span>Gateways</span>
+              </div>
+              <div class="project-results">
+                <span>✓ Convivencia tecnológica</span>
+                <span>✓ Menor riesgo de migración</span>
+              </div>
+              <a class="project-link" href="https://wa.me/56967044419?text=Hola%20FK%20Group%2C%20quiero%20modernizar%20una%20central%20telef%C3%B3nica" target="_blank" rel="noopener">Solicitar diagnóstico →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-project-category="redes">
+            <div class="project-media project-media-redes" data-fallback="⌁">
+              <img src="img/proyectos/red-empresarial.jpg" alt="Implementación de red empresarial administrable" loading="lazy" onerror="this.hidden=true; this.parentElement.classList.add('is-empty');" />
+              <span class="project-type project-type-offer">Oferta activa</span>
+              <div class="project-metric"><strong>360°</strong><span>conectividad administrada</span></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-module">FK Tech & Systems · Redes</div>
+              <h3>Red empresarial segura y escalable</h3>
+              <p>MikroTik en capa 3, switching capa 2, VLAN, VPN, Wi-Fi, QoS y respaldo de enlaces para oficinas, locales, bodegas y operación multisede.</p>
+              <div class="project-tags">
+                <span>MikroTik</span><span>VLAN</span><span>Wi-Fi</span>
+              </div>
+              <div class="project-results">
+                <span>✓ Diseño y configuración</span>
+                <span>✓ Equipos propios o del cliente</span>
+              </div>
+              <a class="project-link" href="https://wa.me/56967044419?text=Hola%20FK%20Group%2C%20quiero%20cotizar%20una%20red%20empresarial" target="_blank" rel="noopener">Armar solución →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-project-category="cctv">
+            <div class="project-media project-media-cctv" data-fallback="◉">
+              <img src="img/proyectos/cctv-hikvision.jpg" alt="Sistema CCTV Hikvision con grabación y acceso remoto" loading="lazy" onerror="this.hidden=true; this.parentElement.classList.add('is-empty');" />
+              <span class="project-type project-type-offer">Paquetes configurables</span>
+              <div class="project-metric"><strong>4 · 8 · +</strong><span>cámaras</span></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-module">FK Power & Works · Seguridad</div>
+              <h3>CCTV Hikvision según cobertura y retención</h3>
+              <p>El cliente selecciona cantidad de cámaras, calidad y almacenamiento. Diseñamos el paquete, instalamos, configuramos y habilitamos visualización remota.</p>
+              <div class="project-tags">
+                <span>Hikvision</span><span>NVR/DVR</span><span>Acceso remoto</span>
+              </div>
+              <div class="project-results">
+                <span>✓ Grabación según días requeridos</span>
+                <span>✓ Alternativas con analítica</span>
+              </div>
+              <a class="project-link" href="https://wa.me/56967044419?text=Hola%20FK%20Group%2C%20quiero%20armar%20un%20paquete%20CCTV" target="_blank" rel="noopener">Configurar paquete →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-project-category="software">
+            <div class="project-media project-media-software" data-fallback="&lt;/&gt;">
+              <img src="img/proyectos/software-ia.jpg" alt="Desarrollo de software e inteligencia artificial aplicada" loading="lazy" onerror="this.hidden=true; this.parentElement.classList.add('is-empty');" />
+              <span class="project-type project-type-solution">Base + personalización</span>
+              <div class="project-metric"><strong>MVP</strong><span>rápido y escalable</span></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-module">FK Tech & Systems · Software e IA</div>
+              <h3>Software adaptable a procesos reales</h3>
+              <p>Partimos desde componentes base para acelerar el proyecto y desarrollamos módulos, integraciones, automatizaciones e IA según la necesidad operacional.</p>
+              <div class="project-tags">
+                <span>Web/App</span><span>APIs</span><span>IA</span>
+              </div>
+              <div class="project-results">
+                <span>✓ Desarrollo por etapas</span>
+                <span>✓ Integración con sistemas existentes</span>
+              </div>
+              <a class="project-link" href="https://wa.me/56967044419?text=Hola%20FK%20Group%2C%20tengo%20una%20idea%20de%20software%20o%20IA" target="_blank" rel="noopener">Revisar idea →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-project-category="it">
+            <div class="project-media project-media-it" data-fallback="▦">
+              <img src="img/proyectos/soporte-ti.jpg" alt="Administración de servidores, licencias y seguridad TI" loading="lazy" onerror="this.hidden=true; this.parentElement.classList.add('is-empty');" />
+              <span class="project-type project-type-offer">Servicio recurrente</span>
+              <div class="project-metric"><strong>TI</strong><span>gestionada</span></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-module">FK Tech & Systems · Infraestructura TI</div>
+              <h3>Soporte, licencias y continuidad tecnológica</h3>
+              <p>Windows, Microsoft 365, servidores, antivirus, respaldo, migraciones y soporte remoto o presencial bajo una operación ordenada y documentada.</p>
+              <div class="project-tags">
+                <span>Windows</span><span>Servidores</span><span>Seguridad</span>
+              </div>
+              <div class="project-results">
+                <span>✓ Soporte por demanda o contrato</span>
+                <span>✓ Prevención y continuidad</span>
+              </div>
+              <a class="project-link" href="https://wa.me/56967044419?text=Hola%20FK%20Group%2C%20quiero%20cotizar%20soporte%20TI" target="_blank" rel="noopener">Cotizar soporte →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-project-category="home">
+            <div class="project-media project-media-home" data-fallback="⌂">
+              <img src="img/proyectos/handyman-tecnico.jpg" alt="Servicio Handyman técnico e instalación de línea blanca" loading="lazy" onerror="this.hidden=true; this.parentElement.classList.add('is-empty');" />
+              <span class="project-type project-type-offer">Atención en terreno</span>
+              <div class="project-metric"><strong>1 visita</strong><span>múltiples soluciones</span></div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-module">FK Home & Handyman</div>
+              <h3>Instalación y asistencia técnica en casa</h3>
+              <p>Montajes, reparaciones menores, línea blanca, dispositivos inteligentes, redes domésticas y soporte técnico coordinado en una misma visita.</p>
+              <div class="project-tags">
+                <span>Instalación</span><span>Domótica</span><span>Línea blanca</span>
+              </div>
+              <div class="project-results">
+                <span>✓ Evaluación previa</span>
+                <span>✓ Solución práctica y explicada</span>
+              </div>
+              <a class="project-link" href="home.html">Ver FK Home →</a>
+            </div>
+          </article>
         </div>
-        <div class="svc-card">
-          <div class="svc-title">Domótica & IoT</div>
-          <div class="svc-price">Desde $90.000</div>
-          <div class="svc-desc">Configuración de Alexa, Google Home, sensores, cámaras, iluminación y automatización del hogar.</div>
-        </div>
-        <div class="svc-card">
-          <div class="svc-title">Desarrollo web / app</div>
-          <div class="svc-price">Desde $300.000</div>
-          <div class="svc-desc">Sitios web, sistemas internos, automatización digital y herramientas para operar mejor tu negocio.</div>
-        </div>
-        <div class="svc-card">
-          <div class="svc-title">Handyman técnico</div>
-          <div class="svc-price">Desde $25.000</div>
-          <div class="svc-desc">Reparaciones menores, instalaciones, montaje, configuración, pruebas y aseo técnico profundo.</div>
-        </div>
-        <div class="svc-card">
-          <div class="svc-title">CCTV y seguridad</div>
-          <div class="svc-price">Desde $120.000</div>
-        <div class="svc-desc">Instalación, configuración y mantención de cámaras de seguridad, grabadores, acceso remoto desde el celular y revisión de cobertura.</div>
-        </div>
+
+        <button class="project-arrow project-arrow-right" type="button" aria-label="Proyecto siguiente" data-project-direction="1">›</button>
+      </div>
+
+      <div class="project-carousel-footer">
+        <div class="project-dots" aria-label="Posición del carrusel"></div>
+        <p><strong>Experiencia del equipo FK:</strong> los casos se presentan de forma general y sin revelar información confidencial de clientes.</p>
       </div>
     </section>
   </div>
@@ -298,39 +441,230 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const slider = document.querySelector('.team-slider');
-      const arrows = document.querySelectorAll('[data-team-direction]');
-
-      if (!slider || !arrows.length) return;
-
-      function moveTeamSlider(direction) {
-        const slide = slider.querySelector('.team-slide');
-        if (!slide) return;
-
-        const sliderStyles = window.getComputedStyle(slider);
-        const gap = parseFloat(sliderStyles.columnGap || sliderStyles.gap) || 18;
-        const step = slide.getBoundingClientRect().width + gap;
-        const maxScroll = slider.scrollWidth - slider.clientWidth - 5;
-
-        if (direction > 0 && slider.scrollLeft >= maxScroll) {
-          slider.scrollTo({ left: 0, behavior: 'smooth' });
-          return;
-        }
-
-        if (direction < 0 && slider.scrollLeft <= 5) {
-          slider.scrollTo({ left: slider.scrollWidth, behavior: 'smooth' });
-          return;
-        }
-
-        slider.scrollBy({ left: direction * step, behavior: 'smooth' });
+      function getScrollStep(scroller, itemSelector, fallbackGap) {
+        const item = scroller.querySelector(itemSelector + ':not([hidden])');
+        if (!item) return scroller.clientWidth;
+        const styles = window.getComputedStyle(scroller);
+        const gap = parseFloat(styles.columnGap || styles.gap) || fallbackGap;
+        return item.getBoundingClientRect().width + gap;
       }
 
-      arrows.forEach(function (button) {
-        button.addEventListener('click', function () {
-          const direction = Number(button.dataset.teamDirection) || 1;
-          moveTeamSlider(direction);
+      function moveLoopingCarousel(scroller, itemSelector, direction, fallbackGap) {
+        const step = getScrollStep(scroller, itemSelector, fallbackGap);
+        const maxScroll = Math.max(0, scroller.scrollWidth - scroller.clientWidth - 5);
+
+        if (direction > 0 && scroller.scrollLeft >= maxScroll) {
+          scroller.scrollTo({ left: 0, behavior: 'smooth' });
+          return;
+        }
+
+        if (direction < 0 && scroller.scrollLeft <= 5) {
+          scroller.scrollTo({ left: scroller.scrollWidth, behavior: 'smooth' });
+          return;
+        }
+
+        scroller.scrollBy({ left: direction * step, behavior: 'smooth' });
+      }
+
+      /* Galería del equipo */
+      const teamSlider = document.querySelector('.team-slider');
+      const teamArrows = document.querySelectorAll('[data-team-direction]');
+
+      if (teamSlider && teamArrows.length) {
+        teamArrows.forEach(function (button) {
+          button.addEventListener('click', function () {
+            moveLoopingCarousel(teamSlider, '.team-slide', Number(button.dataset.teamDirection) || 1, 18);
+          });
         });
+      }
+
+      /* Carrusel de proyectos */
+      const projectCarousel = document.querySelector('#project-carousel');
+      const projectCards = projectCarousel ? Array.from(projectCarousel.querySelectorAll('.project-card')) : [];
+      const projectArrows = document.querySelectorAll('[data-project-direction]');
+      const projectFilters = Array.from(document.querySelectorAll('[data-project-filter]'));
+      const categoryFilters = projectFilters.filter(function (button) {
+        return button.dataset.projectFilter !== 'all';
       });
+      const dotsContainer = document.querySelector('.project-dots');
+      let projectDots = [];
+      let autoPlayTimer = null;
+      let activeProjectFilter = 'all';
+      const PROJECT_AUTOPLAY_MS = 7000;
+
+      function visibleProjectCards() {
+        return projectCards.filter(function (card) { return !card.hidden; });
+      }
+
+      function buildProjectDots() {
+        if (!dotsContainer || !projectCarousel) return;
+        dotsContainer.innerHTML = '';
+        projectDots = visibleProjectCards().map(function (card, index) {
+          const dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'project-dot';
+          dot.setAttribute('aria-label', 'Ir al proyecto ' + (index + 1));
+          dot.addEventListener('click', function () {
+            card.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+            restartAutoPlay();
+          });
+          dotsContainer.appendChild(dot);
+          return dot;
+        });
+        updateProjectDots();
+      }
+
+      function updateProjectDots() {
+        if (!projectCarousel || !projectDots.length) return;
+        const cards = visibleProjectCards();
+        const center = projectCarousel.scrollLeft + projectCarousel.clientWidth / 2;
+        let closestIndex = 0;
+        let closestDistance = Infinity;
+
+        cards.forEach(function (card, index) {
+          const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+          const distance = Math.abs(cardCenter - center);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestIndex = index;
+          }
+        });
+
+        projectDots.forEach(function (dot, index) {
+          dot.classList.toggle('is-active', index === closestIndex);
+          dot.setAttribute('aria-current', index === closestIndex ? 'true' : 'false');
+        });
+      }
+
+      function setProjectFilter(selected, options) {
+        if (!projectCarousel) return;
+
+        const settings = Object.assign({
+          position: 'start',
+          behavior: 'smooth',
+          restart: true
+        }, options || {});
+
+        activeProjectFilter = selected;
+
+        projectFilters.forEach(function (filterButton) {
+          const active = filterButton.dataset.projectFilter === selected;
+          filterButton.classList.toggle('is-active', active);
+          filterButton.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+
+        projectCards.forEach(function (card) {
+          card.hidden = selected !== 'all' && card.dataset.projectCategory !== selected;
+        });
+
+        window.requestAnimationFrame(function () {
+          const maxScroll = Math.max(0, projectCarousel.scrollWidth - projectCarousel.clientWidth);
+          const target = settings.position === 'end' ? maxScroll : 0;
+          projectCarousel.scrollTo({ left: target, behavior: settings.behavior });
+          buildProjectDots();
+        });
+
+        if (settings.restart) restartAutoPlay();
+      }
+
+      function switchProjectCategory(direction) {
+        if (!categoryFilters.length) return;
+
+        let currentIndex = categoryFilters.findIndex(function (button) {
+          return button.dataset.projectFilter === activeProjectFilter;
+        });
+
+        if (currentIndex < 0) {
+          currentIndex = direction > 0 ? -1 : 0;
+        }
+
+        const nextIndex = (currentIndex + direction + categoryFilters.length) % categoryFilters.length;
+        const nextCategory = categoryFilters[nextIndex].dataset.projectFilter;
+
+        setProjectFilter(nextCategory, {
+          position: direction > 0 ? 'start' : 'end',
+          behavior: 'smooth',
+          restart: false
+        });
+      }
+
+      function moveProjectCarousel(direction) {
+        if (!projectCarousel) return;
+
+        const maxScroll = Math.max(0, projectCarousel.scrollWidth - projectCarousel.clientWidth - 5);
+        const atBoundary = direction > 0
+          ? projectCarousel.scrollLeft >= maxScroll
+          : projectCarousel.scrollLeft <= 5;
+
+        /*
+          En un filtro específico, al terminar sus tarjetas se activa
+          automáticamente la categoría siguiente o anterior.
+          En "Todos", el carrusel recorre todas las tarjetas y vuelve al inicio.
+        */
+        if (activeProjectFilter !== 'all' && (maxScroll <= 5 || atBoundary)) {
+          switchProjectCategory(direction);
+          return;
+        }
+
+        moveLoopingCarousel(projectCarousel, '.project-card', direction, 18);
+      }
+
+      function restartAutoPlay() {
+        window.clearInterval(autoPlayTimer);
+        if (!projectCarousel || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        autoPlayTimer = window.setInterval(function () {
+          moveProjectCarousel(1);
+        }, PROJECT_AUTOPLAY_MS);
+      }
+
+      if (projectCarousel && projectCards.length) {
+        buildProjectDots();
+        restartAutoPlay();
+
+        projectArrows.forEach(function (button) {
+          button.addEventListener('click', function () {
+            moveProjectCarousel(Number(button.dataset.projectDirection) || 1);
+            restartAutoPlay();
+          });
+        });
+
+        projectFilters.forEach(function (button) {
+          button.addEventListener('click', function () {
+            setProjectFilter(button.dataset.projectFilter, {
+              position: 'start',
+              behavior: 'smooth',
+              restart: true
+            });
+          });
+        });
+
+        projectCarousel.addEventListener('scroll', function () {
+          window.requestAnimationFrame(updateProjectDots);
+        }, { passive: true });
+
+        projectCarousel.addEventListener('mouseenter', function () {
+          window.clearInterval(autoPlayTimer);
+        });
+
+        projectCarousel.addEventListener('mouseleave', restartAutoPlay);
+        projectCarousel.addEventListener('focusin', function () {
+          window.clearInterval(autoPlayTimer);
+        });
+        projectCarousel.addEventListener('focusout', restartAutoPlay);
+
+        projectCarousel.addEventListener('keydown', function (event) {
+          if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+            event.preventDefault();
+            moveProjectCarousel(event.key === 'ArrowRight' ? 1 : -1);
+            restartAutoPlay();
+          }
+        });
+
+        window.addEventListener('resize', function () {
+          updateProjectDots();
+        });
+      }
     });
   </script>
 
