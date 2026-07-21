@@ -1043,6 +1043,44 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
+.project-carousel {
+  align-items: stretch;
+}
+
+.project-card {
+  height: 100%;
+}
+
+.project-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mantiene títulos alineados aunque uno ocupe dos líneas */
+.project-card h3 {
+  min-height: 48px;
+}
+
+/* Mantiene descripciones con un espacio uniforme */
+.project-card p {
+  min-height: 80px;
+}
+
+/* Mantiene etiquetas y resultados alineados */
+.project-tags {
+  min-height: 31px;
+}
+
+.project-results {
+  min-height: 50px;
+}
+
+/* Envía el enlace siempre al fondo */
+.project-link {
+  margin-top: auto;
+}
+
 .project-card:hover {
   transform: translateY(-5px);
   border-color: rgba(255,107,0,0.45);
@@ -1053,7 +1091,10 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
 
 .project-media {
   position: relative;
-  min-height: 220px;
+  width: 100%;
+  height: 235px;
+  min-height: 235px;
+  flex: 0 0 235px;
   overflow: hidden;
   isolation: isolate;
   background: linear-gradient(135deg, #12223b, #0a1628 65%, #ff6b00);
@@ -1101,8 +1142,9 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
 .project-media img {
   width: 100%;
   height: 100%;
-  min-height: 220px;
+  min-height: 0;
   object-fit: cover;
+  object-position: center;
   display: block;
   transition: transform 0.6s ease;
 }
@@ -1301,8 +1343,13 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
 }
 
 @media (max-width: 980px) {
-  .project-carousel { grid-auto-columns: calc((100% - 18px) / 2); }
-  .showcase-heading { align-items: flex-start; }
+  .project-carousel {
+    grid-auto-columns: calc((100% - 18px) / 2);
+  }
+
+  .showcase-heading {
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1312,21 +1359,100 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
     gap: 0.75rem;
   }
 
-  .project-carousel { grid-auto-columns: minmax(86%, 1fr); }
-  .project-arrow { width: 40px; height: 40px; font-size: 28px; }
-  .project-arrow-left { left: -8px; }
-  .project-arrow-right { right: -8px; }
-  .project-carousel-footer { align-items: flex-start; flex-direction: column; }
-  .project-carousel-footer p { text-align: left; }
+  .project-carousel {
+    grid-auto-columns: minmax(86%, 1fr);
+  }
+
+  /* Altura uniforme de imágenes en tablet */
+  .project-media {
+    height: 220px;
+    min-height: 220px;
+    flex: 0 0 220px;
+  }
+
+  .project-media img {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* En pantallas pequeñas dejamos que el texto crezca naturalmente */
+  .project-card h3,
+  .project-card p,
+  .project-tags,
+  .project-results {
+    min-height: auto;
+  }
+
+  .project-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+  }
+
+  .project-arrow-left {
+    left: -8px;
+  }
+
+  .project-arrow-right {
+    right: -8px;
+  }
+
+  .project-carousel-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-carousel-footer p {
+    text-align: left;
+  }
 }
 
 @media (max-width: 480px) {
-  .showcase-section { padding-left: 1rem; padding-right: 1rem; }
-  .project-carousel { grid-auto-columns: 92%; }
-  .project-media, .project-media img { min-height: 205px; }
-  .project-card h3 { font-size: 18px; }
-  .project-arrow-left { left: -2px; }
-  .project-arrow-right { right: -2px; }
+  .showcase-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .project-carousel {
+    grid-auto-columns: 92%;
+  }
+
+  /* Altura uniforme de imágenes en celular */
+  .project-media {
+    height: 205px;
+    min-height: 205px;
+    flex: 0 0 205px;
+  }
+
+  .project-media img {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+    min-height: auto;
+  }
+
+  .project-card p,
+  .project-tags,
+  .project-results {
+    min-height: auto;
+  }
+
+  .project-arrow-left {
+    left: -2px;
+  }
+
+  .project-arrow-right {
+    right: -2px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1334,5 +1460,7 @@ footer .tag { font-size: 12px; color: var(--accent); font-weight: 500; }
   .project-media img,
   .project-arrow,
   .project-filter,
-  .showcase-cta { transition: none; }
+  .showcase-cta {
+    transition: none;
+  }
 }
